@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins";
+   box-sizing: border-box;
+}
+.main{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+   
+}
+.content{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background: url("bg.gif") no-repeat;
+    background-position: center;
+    width: 100%; 
+    max-width: 600px; 
+    background-color: black;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.follow_us{
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    background: url("font.gif") no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.links{
+    width: 100%; 
+    max-width: 300px;
+    height: 50px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    padding-top: 8px;
+    position: relative;
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+.links a{
+    color: white;
+    font-size: 1.4rem;
+    padding: 0 10px;
+    text-decoration: none;
+    
+}
+.links i{
+    position: absolute;
+    top: 25%;
+    font-size: 1.4rem;
+    color: white;
+}
+.links_insta{
+    background: linear-gradient(to right, rgb(131, 58, 180), rgb(252, 176, 69), rgb(251, 93, 76));
+}
+.links_tw{
+    background: linear-gradient(to right, rgb(29, 161, 242), rgb(29, 140, 235), rgb(26, 118, 210));
+}
+.links_fb{
+    background: linear-gradient(to right, rgb(24, 119, 242), rgb(118, 158, 255));
+}
+.links_x{
+    background: linear-gradient(to right, rgb(29, 161, 242), rgb(129, 207, 224))
+}
+.links_yt{
+
+    background-color: rgb(255, 0, 0);
+}
+.links_linkdin{
+    background-color: rgb(0, 119, 181);
+}
+.join_us{
+    background-color: rgb(37, 211, 102);
+    margin-bottom: 40px;
+}
+.links:hover{
+    transform: scale(1.1);
+}
+.github{
+    background-color: black;
+}
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        background: url("bg.gif") no-repeat;
+    background-position: center;
+    }
+    
+    .content {
+        background: transparent;
+        max-width: 100%; /* Full width for smaller screens */
+    }
+    
+    .links {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+    
+    .links i {
+        position: relative; /* Return to normal flow */
+        transform: none;
+        top: 8%;
+        right: auto;
+        margin-left: 10px; /* Add space between icon and text */
+    }
+}
