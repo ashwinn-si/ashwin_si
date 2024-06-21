@@ -93,11 +93,14 @@
     background-color: rgb(37, 211, 102);
     margin-bottom: 40px;
 }
-.links:hover{
-    transform: scale(1.1);
-}
 .github{
     background-color: black;
+}
+@media (min-width: 1200px){
+    .links:hover{
+        transform: scale(1.1);
+    }
+
 }
 @media (max-width: 768px) {
     .main {
@@ -121,5 +124,5 @@
         top: 8%;
         right: auto;
         margin-left: 10px; /* Add space between icon and text */
-    }
+    }   
 }
