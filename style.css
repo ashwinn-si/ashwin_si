@@ -129,9 +129,7 @@
 }
 
 @media (max-width: 768px) {
-    .links:hover {
-        transform: none; /* Ensure hover effect is removed */
-    }
+    
     .main {
         flex-direction: column;
         background: url("images/bg.gif") no-repeat;
@@ -154,5 +152,29 @@
         top: 8%;
         right: auto;
         margin-left: 10px; 
-    }   
+    }
+    .loader-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff; /* adjust background color as needed */
+        z-index: 9999; /* ensures it's above other content */
+    }
+    .loader-container img{
+        width: 400px;
+    }
+    
+    
+    .hidden {
+        display: none; /* show content when loaded */
+    }
+    .links:hover {
+        transform: none; /* Ensure hover effect is removed */
+    }
 }
