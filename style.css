@@ -105,7 +105,28 @@
 .links:hover{
         transform: scale(1.1);
 }
+/*loading effect*/
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* adjust background color as needed */
+    z-index: 9999; /* ensures it's above other content */
+}
+.loader-container img{
+    width: 470px;
+}
 
+
+.hidden {
+    display: none; /* show content when loaded */
+}
 
 @media (max-width: 768px) {
     .links:hover {
@@ -119,19 +140,19 @@
     
     .content {
         background: transparent;
-        max-width: 100%; /* Full width for smaller screens */
+        max-width: 100%; 
     }
     
     .links {
         transition: none;
-        max-width: 100%; /* Full width for smaller screens */
+        max-width: 100%; 
     }
     
     .links i {
-        position: relative; /* Return to normal flow */
+        position: relative; 
         transform: none;
         top: 8%;
         right: auto;
-        margin-left: 10px; /* Add space between icon and text */
+        margin-left: 10px; 
     }   
 }
