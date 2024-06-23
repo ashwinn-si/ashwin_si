@@ -4,6 +4,7 @@
     font-family: "Poppins";
    box-sizing: border-box;
 }
+
 .main{
     background-color: black;
     width: 100%;
@@ -20,7 +21,7 @@
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    background: url("bg.gif") no-repeat;
+    background: url("images/bg.gif") no-repeat;
     background-position: center;
     width: 100%; 
     max-width: 600px; 
@@ -39,7 +40,7 @@
     padding: 10px;
     font-size: 1.4rem;
     text-align: center;
-    background: url("font.gif") no-repeat;
+    background: url("images/font.gif") no-repeat;
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
@@ -71,42 +72,49 @@
     color: white;
 }
 .links_insta{
-    background: linear-gradient(to right, rgb(131, 58, 180), rgb(252, 176, 69), rgb(251, 93, 76));
-}
-.links_tw{
-    background: linear-gradient(to right, rgb(29, 161, 242), rgb(29, 140, 235), rgb(26, 118, 210));
-}
-.links_fb{
-    background: linear-gradient(to right, rgb(24, 119, 242), rgb(118, 158, 255));
-}
-.links_x{
-    background: linear-gradient(to right, rgb(29, 161, 242), rgb(129, 207, 224))
-}
-.links_yt{
+    background-image: url("images/insta.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    background-color: rgb(255, 0, 0);
+}
+
+.links_yt{
+    background-image: url("images/yt.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .links_linkdin{
-    background-color: rgb(0, 119, 181);
+    background-image: url("images/linkdin.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.join_us{
-    background-color: rgb(37, 211, 102);
-    margin-bottom: 40px;
-}
-.github{
-    background-color: black;
-}
-@media (min-width: 1200px){
-    .links:hover{
-        transform: scale(1.1);
-    }
 
+.github{
+    font-weight: bold;
+    background-image: url("images/github.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+.links{
+    font-weight: bold;
+}
+.links:hover{
+        transform: scale(1.1);
+}
+
+
 @media (max-width: 768px) {
+    .links:hover {
+        transform: none; /* Ensure hover effect is removed */
+    }
     .main {
         flex-direction: column;
-        background: url("bg.gif") no-repeat;
-    background-position: center;
+        background: url("images/bg.gif") no-repeat;
+        background-position: center;
     }
     
     .content {
@@ -115,6 +123,7 @@
     }
     
     .links {
+        transition: none;
         max-width: 100%; /* Full width for smaller screens */
     }
     
