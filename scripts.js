@@ -3,4 +3,4 @@ function myFunction() {
 
     loaderContainer.style.display = 'none';
 }
-setTimeout(myFunction, 5000);
+setTimeout(myFunction, 7000);
