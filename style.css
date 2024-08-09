@@ -71,40 +71,7 @@
     font-size: 1.4rem;
     color: white;
 }
-.links_insta{
-    background-image: url("images/insta.gif");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-}
-
-.links_yt{
-    background-image: url("images/yt.gif");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.links_linkdin{
-    background-image: url("images/linkdin.gif");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.github{
-    font-weight: bold;
-    background-image: url("images/github.gif");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.links{
-    font-weight: bold;
-}
-.links:hover{
-        transform: scale(1.1);
-}
 /*loading effect*/
 .loader-container{
     background-color: black;
@@ -160,6 +127,61 @@
   @keyframes l6 {
       100% {inset:0}
   }
+@media (min-width:768px) {
+    .content div{
+        background-color: transparent;
+        border-radius: 1px;
+        border: solid;
+        border-radius: 20px;
+        border-color: white;
+        transition: all 1s;
+    }
+    .content div:hover{
+        border:none;
+    }
+    .links_insta:hover{
+        background-image: url("images/insta.gif");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    
+    .links_yt:hover{
+        background-image: url("images/yt.gif");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .links_linkdin:hover{
+        background-image: url("images/linkdin.gif");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .github:hover{
+        font-weight: bold;
+        background-image: url("images/github.gif");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .my-works:hover{
+        font-weight: bold;
+        background-image: url("images/works.gif");
+        background-position: 5%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .links{
+        font-weight: bold;
+    }
+    .links:hover{
+            transform: scale(1.1);
+    }
+    
+}
 @media (max-width: 768px) {
     
     .main {
