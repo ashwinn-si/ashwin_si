@@ -39,7 +39,7 @@
     animation-name:background_container_ani;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
-
+    animation-delay: 3s;
 }
 .follow_us{
     font-weight: bold;
@@ -55,6 +55,7 @@
     animation-name:header_ani;
     animation-duration: 4.5s;
     animation-timing-function: ease-out;
+    animation-delay: 3s;
 }
 .links{
     width: 100%; 
@@ -71,6 +72,7 @@
     animation-name:buttons_ani;
     animation-duration: 6s;
     animation-timing-function: ease-out;
+    animation-delay: 3s;
 }
 .links a{
     color: white;
@@ -137,6 +139,7 @@
     border-radius: inherit;
     background: currentColor;
     animation: l6 7.2s infinite;
+
   }
   @keyframes l6 {
       100% {inset:0}
