@@ -161,6 +161,7 @@
     }
     100%{
         transform: translateX(0%);
+        transition: all 1s;
     }
 }
 @keyframes header_ani{
@@ -184,12 +185,19 @@
     .content div:hover{
         border:none;
     }
+    .links_insta,
+    .links_yt,
+    .links_linkdin,
+    .github,
+    .my-works{
+        transition: all 1s;
+    }
     .links_insta:hover{
         background-image: url("images/insta.gif");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-    
+        transform: scale(1.2);
     }
     
     .links_yt:hover{
@@ -197,12 +205,14 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        transform: scale(1.2);
     }
     .links_linkdin:hover{
         background-image: url("images/linkdin.gif");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        transform: scale(1.2);
     }
     
     .github:hover{
@@ -211,6 +221,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        transform: scale(1.2);
     }
     .my-works:hover{
         font-weight: bold;
@@ -218,13 +229,20 @@
         background-position: 5%;
         background-size: cover;
         background-repeat: no-repeat;
+        transform: scale(1.2);
     }
+    .links_insta:hover,
+    .links_yt:hover,
+    .links_linkdin:hover,
+    .github:hover,
+    .my-works:hover {
+    transform: scale(1.1) !important;
+}
+
     .links{
         font-weight: bold;
     }
-    .links:hover{
-            transform: scale(1.1);
-    }
+    
     
 }
 @media (max-width: 768px) {
