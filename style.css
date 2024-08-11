@@ -28,7 +28,7 @@
     width: 100%; 
     max-width: 600px; 
     background-color: black;
-    border-radius: 40px;
+    border-radius: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     padding: 20px; 
     display: flex;
@@ -46,11 +46,7 @@
     padding: 10px;
     font-size: 1.4rem;
     text-align: center;
-    background: url("images/font.gif") no-repeat;
-    background-size: cover;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: white;
     animation-fill-mode: forwards;
     animation-name:header_ani;
     animation-duration: 4.5s;
@@ -174,6 +170,7 @@
     }
     100%{
         transform: translateX(0%);
+        text-shadow: 0 0 10px #7600bc, 0 0 20px #7600bc, 0 0 30px #7600bc, 0 0 40px #7600bc, 0 0 50px #7600bc, 0 0 60px #7600bc, 0 0 70px #7600bc;
     }
 }
 @media (min-width:768px) {
@@ -249,6 +246,9 @@
     
 }
 @media (max-width: 768px) {
+    body{
+        background-color: black;
+    }
     .links_insta{
         background-image: url("images/insta.gif");
         background-position: center;
@@ -320,5 +320,11 @@
     /*animation effect*/
     .content{
         animation: none;
+    }
+    .follow_us{
+        animation-duration: 2s;
+    }
+    .links{
+        animation-duration: 4s;
     }
 }
