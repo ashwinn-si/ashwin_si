@@ -24,8 +24,6 @@
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    background: url("images/bg.gif") no-repeat;
-    background-position: center;
     width: 100%; 
     max-width: 600px; 
     background-color: black;
@@ -163,6 +161,7 @@
         top: 50%; 
         left: 50%; 
         transform: translate(-50%,-50%);
+        box-shadow: 0 0 20px lightgreen, 0 0 40px lightgreen, 0 0 60px lightgreen, 0 0 80px lightgreen;
         
     }
 }
