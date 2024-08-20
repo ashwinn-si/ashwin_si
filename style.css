@@ -18,6 +18,7 @@
     padding: 20px; 
    
 }
+
 .content{
     position: absolute; 
     top: 50%; 
@@ -41,6 +42,18 @@
     animation-timing-function: ease-in-out;
     animation-delay: 1ms;
 }
+.resume_logo{
+    position: absolute;
+    top: 7.5%;
+    left:70%;
+   color: white;
+    font-size: 1.5rem;
+    animation-fill-mode: forwards;
+    animation-name:resume_ani;
+    animation-duration: 4.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1ms;
+}
 .follow_us{
     font-weight: bold;
     padding: 10px;
@@ -48,7 +61,7 @@
     text-align: center;
     color: white;
     animation-fill-mode: forwards;
-    animation-name:header_ani;
+    animation-name:follow_us_ani;
     animation-duration: 4.5s;
     animation-timing-function: ease-out;
     animation-delay: 1ms;
@@ -163,7 +176,7 @@
         transition: all 1s;
     }
 }
-@keyframes header_ani{
+@keyframes follow_us_ani{
     0%{
         transform: translateX(+3000%);
         
@@ -171,6 +184,16 @@
     100%{
         transform: translateX(0%);
         text-shadow: 0 0 10px #7600bc, 0 0 20px #7600bc, 0 0 30px #7600bc, 0 0 40px #7600bc, 0 0 50px #7600bc, 0 0 60px #7600bc, 0 0 70px #7600bc;
+    }
+}
+@keyframes resume_ani{
+    0%{
+        transform: translateX(-7000%);
+        
+    }
+    100%{
+        transform: translateX(0%);
+        text-shadow: 0 0 10px tomato, 0 0 20px tomato, 0 0 30px tomato, 0 0 40px tomato, 0 0 50px tomato, 0 0 60px tomato, 0 0 70px tomato;
     }
 }
 @media (min-width:768px) {
@@ -316,6 +339,10 @@
     }
     .links:hover {
         transform: none; /* Ensure hover effect is removed */
+    }
+    .resume_logo{
+        animation-duration: 2s;
+        left:80%;
     }
     /*animation effect*/
     .content{
