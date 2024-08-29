@@ -315,7 +315,7 @@
     
     .main {
         flex-direction: column;
-        background: url("images/bg.gif") no-repeat;
+        
         background-position: center;
     }
     
